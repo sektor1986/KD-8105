@@ -1,0 +1,423 @@
+_____________________________________________________________________________
+F2MC-16 Family SOFTUNE Assembler V30L14       2012-10-29 13:47:09   Page:   1
+- ASSEMBLE INFORMATION - ( utils )
+
+|             Command line         :  C:\Program Files\Softune16\bin\fasm90 |
+|                                     7s.exe -f C:\Users\836D~1\AppData\Loc |
+|                                     al\Temp\f13585.opt                    |
+|                                                                           |
+|             Total errors         :    0                                   |
+|             Total warnings       :    0                                   |
+|                                       There were no errors.               |
+|                                                                           |
+|             Object file          :  C:\Users\836D~1\AppData\Local\Temp\f1 |
+|                                     3584.obj                              |
+|             List file            :  utils.lst                             |
+|                                                                           |
+|                                                                           |
+| NO NEST     SOURCE-FILE-NAME                     CREATE DATE/TIME         |
+| -- -------- ------------------------------------ ------------------------ |
+|  0          c:\users\836d~1\appdata\local\temp\f 2012-10-29 13:47:09      |
+|             13582.asm                                                     |
+| -- -------- ------------------------------------ ------------------------ |
+|                                                                           |
+|                                                                           |
+|             Current path         :  E:\sektor\Project\KD_8105\Source      |
+|             Include path         :  INC907     = C:\Program Files\Softune |
+|                                                  16\LIB\907\INCLUDE\      |
+|             Work file path       :  TMP        = C:\Users\836D~1\AppData\ |
+|                                                  Local\Temp\              |
+|             Default Option file  :  OPT907     = C:\Program Files\Softune |
+|                                                  16\LIB\907\ (fasm907.opt |
+|                                                  )                        |
+|                                                                           |
+|                                                                           |
+| NO NEST     OPTION-FILE-NAME                     CREATE DATE/TIME         |
+| -- -------- ------------------------------------ ------------------------ |
+|  0          C:\Program Files\Softune16\LIB\907\f 2000-09-11 16:50:10      |
+|             asm907.opt                                                    |
+|             ------------------------------------                          |
+|             # FFMC-16 Family Softune Assembler D                          |
+|             efault Option File                                            |
+| -- -------- ------------------------------------ ------------------------ |
+|  1          C:\Users\836D~1\AppData\Local\Temp\f 2012-10-29 13:47:09      |
+|             13585.opt                                                     |
+|             ------------------------------------                          |
+|             -cpu                                                          |
+|             MB96F675RA                                                    |
+|             -g                                                            |
+|             -lf                                                           |
+|             "utils.lst"                                                   |
+|             "c:\users\836d~1\appdata\local\temp\                          |
+|             f13582.asm"                                                   |
+|             -o                                                            |
+|             "C:\Users\836D~1\AppData\Local\Temp\                          |
+|             f13584.obj"                                                   |
+|             -name                                                         |
+|             utils                                                         |
+|                                                                           |
+| -- -------- ------------------------------------ ------------------------ |
+|___________________________________________________________________________|
+_____________________________________________________________________________
+F2MC-16 Family SOFTUNE Assembler V30L14       2012-10-29 13:47:09   Page:   2
+- SOURCE LISTING - ( utils )
+
+SN LOC    OBJ                           LLINE      SOURCE
+
+<c:\users\836d~1\appdata\local\temp\f13
+582.asm>                                =====
+                                            1              ._LANGUAGE      C_FFMC-16, N, M, N
+                                            2              ._FILE  "e:\sektor\project\kd_8105\sourc
+                                                   e\src\utils.c", 0
+                                            3              ._FILE  "e:\sektor\project\kd_8105\sourc
+                                                   e\src\utils.h", 1
+                                            4              ._FILE  "C:\Users\836D~1\AppData\Local\T
+                                                   emp\f13580.i", 2
+                                            5              ._BTYPE 1, 1
+                                            6              ._BTYPE 2, 1
+                                            7              ._BTYPE 3, 2
+                                            8              ._BTYPE 4, 2
+                                            9              ._BTYPE 5, 2
+                                           10              ._BTYPE 6, 2
+                                           11              ._BTYPE 7, 4
+                                           12              ._BTYPE 8, 4
+                                           13              ._BTYPE 11, 4
+                                           14              ._BTYPE 12, 8
+                                           15              ._BTYPE 13, 8
+                                           16              ._BTYPE 15, 0
+MODULE NAME = utils                        17              .PROGRAM        utils
+                                           18              .LIBRARY        "lib904m.lib"
+                                           19
+CO 000000 --------<CODE_utils>---------    20              .SECTION        CODE_utils, CODE, ALIGN=
+                                                   1
+                                           21              ._SYMBOL        "ToBCD", F, 8, E, "_ToBC
+                                                   D", F
+                                           22              ._FPARAM        S, 1, F
+                                           23              ._SYMBOL        "byte", P, 8, A, 6
+                                           24              ._TYPED N
+                                           25              ._FPARAM        E
+                                           26              ._TYPED F
+                                           27              ._CONFIG        S, F, 1
+                                           28              ._LINE  0, 4
+                                           29      ;-------begin_of_function
+                                           30              .GLOBAL _ToBCD
+CO 000000                                  31      _ToBCD:
+CO 000000 0802                             32              LINK    #2
+CO 000002 4F07                             33              PUSHW   (RW0,RW1,RW2)
+                                           34              ._FUNCTION      "RW3", "RW3", 10
+                                           35              ._CONFIG        S, B
+                                           36      ;;;;     {
+                                           37              ._SYMBOL        "bcd", V, 8, R, "RL0"
+                                           38              ._TYPED N
+                                           39      ;;;;            unsigned long bcd = 0;
+                                           40              ._LINE  0, 5
+CO 000004 D0                               41              MOVN    A, #0
+CO 000005 1D                               42              ZEXTW
+CO 000006 71A0                             43              MOVL    RL0, A
+                                           44              ._SYMBOL        "count", V, 2, A, -1
+                                           45              ._TYPED N
+                                           46      ;;;;            unsigned char count = 0, count2,
+                                                   i;
+_____________________________________________________________________________
+F2MC-16 Family SOFTUNE Assembler V30L14       2012-10-29 13:47:09   Page:   3
+- SOURCE LISTING - ( utils )
+
+SN LOC    OBJ                           LLINE      SOURCE
+
+                                           47              ._LINE  0, 6
+CO 000008 D0                               48              MOVN    A, #0
+CO 000009 72B3FF                           49              MOV     @RW3+-1, A
+                                           50              ._SYMBOL        "count2", V, 2, A, -2
+                                           51              ._TYPED N
+                                           52              ._SYMBOL        "i", V, 2, R, "RW2"
+                                           53              ._TYPED N
+                                           54              ._LINE  0, 8
+                                           55      ;;;;            if (!byte) return 0;
+CO 00000C 719306                           56              MOVL    A, @RW3+6
+CO 00000F F105                             57              BNE     L_58
+                                           58              ._LINE  0, 8
+CO 000011 D0                               59              MOVN    A, #0
+CO 000012 1D                               60              ZEXTW
+                                           61   x          BRA16   L_89
+CO 000013 620000                    R           O  "JMP"
+CO 000016                                  62      L_58:
+                                           63              ._LINE  0, 10
+                                           64      ;;;;            while (!(byte&0x80000000l))
+CO 000016 3C0000                           65              ANDW    A, #0
+CO 000019 1E                               66              SWAPW
+CO 00001A 3C0080                           67              ANDW    A, #32768
+CO 00001D 1E                               68              SWAPW
+CO 00001E 2D                               69              ORW     A
+CO 00001F F11B                             70              BNE     L_62
+                                           71              ._LINE  0, 10
+CO 000021                                  72      L_60:
+                                           73      ;;;;            {
+                                           74              ._LINE  0, 12
+                                           75      ;;;;                    byte<<=1;
+CO 000021 719306                           76              MOVL    A, @RW3+6
+CO 000024 A001                             77              MOV     R0, #1
+CO 000026 6F1C                             78              LSLL    A, R0
+CO 000028 71B306                           79              MOVL    @RW3+6, A
+                                           80              ._LINE  0, 13
+                                           81      ;;;;                    count++;
+CO 00002B 7253FF                           82              INC     @RW3+-1
+                                           83      ;;;;            }
+                                           84              ._LINE  0, 14
+CO 00002E 719306                           85              MOVL    A, @RW3+6
+CO 000031 3C0000                           86              ANDW    A, #0
+CO 000034 1E                               87              SWAPW
+CO 000035 3C0080                           88              ANDW    A, #32768
+CO 000038 1E                               89              SWAPW
+CO 000039 2D                               90              ORW     A
+CO 00003A F0E5                             91              BEQ     L_60
+                                           92              ._LINE  0, 14
+CO 00003C                                  93      L_62:
+                                           94              ._LINE  0, 15
+                                           95      ;;;;            count  = 32 - count;
+CO 00003C 4220                             96              MOV     A, #32
+CO 00003E 7293FF                           97              MOV     A, @RW3+-1
+CO 000041 29                               98              SUBW    A
+CO 000042 72B3FF                           99              MOV     @RW3+-1, A
+_____________________________________________________________________________
+F2MC-16 Family SOFTUNE Assembler V30L14       2012-10-29 13:47:09   Page:   4
+- SOURCE LISTING - ( utils )
+
+SN LOC    OBJ                           LLINE      SOURCE
+
+                                          100              ._LINE  0, 16
+                                          101      ;;;;            count2 = count-1;
+CO 000045 15                              102              ZEXT
+CO 000046 D1                              103              MOVN    A, #1
+CO 000047 29                              104              SUBW    A
+CO 000048 72B3FE                          105              MOV     @RW3+-2, A
+                                          106              ._LINE  0, 18
+                                          107      ;;;;            for (i=0; i<count; i++)
+CO 00004B D0                              108              MOVN    A, #0
+CO 00004C 9A                              109              MOVW    RW2, A
+CO 00004D 7293FF                          110              MOV     A, @RW3+-1
+                                          111   x          BEQ16   L_88
+CO 000050 F103                                  O  "BNE"
+CO 000052 620000                    R           O  "JMP"
+                                          112              ._LINE  0, 18
+CO 000055                                 113      L_64:
+                                          114      ;;;;            {
+                                          115              ._LINE  0, 20
+                                          116      ;;;;                    bcd<<=1;
+CO 000055 7180                            117              MOVL    A, RL0
+CO 000057 A001                            118              MOV     R0, #1
+CO 000059 6F1C                            119              LSLL    A, R0
+CO 00005B 71A0                            120              MOVL    RL0, A
+                                          121              ._LINE  0, 21
+                                          122      ;;;;                    if (byte& 0x80000000l)
+CO 00005D 719306                          123              MOVL    A, @RW3+6
+CO 000060 3C0000                          124              ANDW    A, #0
+CO 000063 1E                              125              SWAPW
+CO 000064 3C0080                          126              ANDW    A, #32768
+CO 000067 1E                              127              SWAPW
+CO 000068 2D                              128              ORW     A
+CO 000069 F007                            129              BEQ     L_66
+                                          130              ._LINE  0, 22
+                                          131      ;;;;                            bcd|=1;
+CO 00006B 7180                            132              MOVL    A, RL0
+CO 00006D 3D0100                          133              ORW     A, #1
+CO 000070 71A0                            134              MOVL    RL0, A
+CO 000072                                 135      L_66:
+                                          136              ._LINE  0, 23
+                                          137      ;;;;                    byte<<=1;
+CO 000072 719306                          138              MOVL    A, @RW3+6
+CO 000075 A001                            139              MOV     R0, #1
+CO 000077 6F1C                            140              LSLL    A, R0
+CO 000079 71B306                          141              MOVL    @RW3+6, A
+                                          142              ._LINE  0, 24
+                                          143      ;;;;                    if (i==count2) break;
+CO 00007C 7293FE                          144              MOV     A, @RW3+-2
+CO 00007F 7662                            145              CMPW    A, RW2
+                                          146   x          BEQ16   L_88
+CO 000081 F103                                  O  "BNE"
+CO 000083 620000                    R           O  "JMP"
+                                          147              ._LINE  0, 24
+                                          148              ._LINE  0, 26
+                                          149      ;;;;                    bcd+=0x33333333l;
+_____________________________________________________________________________
+F2MC-16 Family SOFTUNE Assembler V30L14       2012-10-29 13:47:09   Page:   5
+- SOURCE LISTING - ( utils )
+
+SN LOC    OBJ                           LLINE      SOURCE
+
+CO 000086 7180                            150              MOVL    A, RL0
+CO 000088 1833333333                      151              ADDL    A, #858993459
+CO 00008D 71A0                            152              MOVL    RL0, A
+                                          153              ._LINE  0, 28
+                                          154      ;;;;                    if (!((bcd)& 0x00000008l
+                                                   ))
+CO 00008F D8                              155              MOVN    A, #8
+CO 000090 2C                              156              ANDW    A
+CO 000091 1D                              157              ZEXTW
+CO 000092 2D                              158              ORW     A
+CO 000093 F109                            159              BNE     L_70
+                                          160              ._LINE  0, 29
+                                          161      ;;;;                            bcd-=0x00000003l
+                                                   ;
+CO 000095 7180                            162              MOVL    A, RL0
+CO 000097 1903000000                      163              SUBL    A, #3
+CO 00009C 71A0                            164              MOVL    RL0, A
+CO 00009E                                 165      L_70:
+                                          166              ._LINE  0, 30
+                                          167      ;;;;                    if (!((bcd)& 0x00000080l
+                                                   ))
+CO 00009E 7180                            168              MOVL    A, RL0
+CO 0000A0 3C8000                          169              ANDW    A, #128
+CO 0000A3 1D                              170              ZEXTW
+CO 0000A4 2D                              171              ORW     A
+CO 0000A5 F109                            172              BNE     L_72
+                                          173              ._LINE  0, 31
+                                          174      ;;;;                            bcd-=0x00000030l
+                                                   ;
+CO 0000A7 7180                            175              MOVL    A, RL0
+CO 0000A9 1930000000                      176              SUBL    A, #48
+CO 0000AE 71A0                            177              MOVL    RL0, A
+CO 0000B0                                 178      L_72:
+                                          179              ._LINE  0, 32
+                                          180      ;;;;                    if (!((bcd)& 0x00000800l
+                                                   ))
+CO 0000B0 7180                            181              MOVL    A, RL0
+CO 0000B2 3C0008                          182              ANDW    A, #2048
+CO 0000B5 1D                              183              ZEXTW
+CO 0000B6 2D                              184              ORW     A
+CO 0000B7 F109                            185              BNE     L_74
+                                          186              ._LINE  0, 33
+                                          187      ;;;;                            bcd-=0x00000300l
+                                                   ;
+CO 0000B9 7180                            188              MOVL    A, RL0
+CO 0000BB 1900030000                      189              SUBL    A, #768
+CO 0000C0 71A0                            190              MOVL    RL0, A
+CO 0000C2                                 191      L_74:
+                                          192              ._LINE  0, 34
+                                          193      ;;;;                    if (!((bcd)& 0x00008000l
+                                                   ))
+CO 0000C2 7180                            194              MOVL    A, RL0
+CO 0000C4 3C0080                          195              ANDW    A, #32768
+CO 0000C7 1D                              196              ZEXTW
+_____________________________________________________________________________
+F2MC-16 Family SOFTUNE Assembler V30L14       2012-10-29 13:47:09   Page:   6
+- SOURCE LISTING - ( utils )
+
+SN LOC    OBJ                           LLINE      SOURCE
+
+CO 0000C8 2D                              197              ORW     A
+CO 0000C9 F109                            198              BNE     L_76
+                                          199              ._LINE  0, 35
+                                          200      ;;;;                            bcd-=0x00003000l
+                                                   ;
+CO 0000CB 7180                            201              MOVL    A, RL0
+CO 0000CD 1900300000                      202              SUBL    A, #12288
+CO 0000D2 71A0                            203              MOVL    RL0, A
+CO 0000D4                                 204      L_76:
+                                          205              ._LINE  0, 36
+                                          206      ;;;;                    if (!((bcd)& 0x00080000l
+                                                   ))
+CO 0000D4 7180                            207              MOVL    A, RL0
+CO 0000D6 3C0000                          208              ANDW    A, #0
+CO 0000D9 1E                              209              SWAPW
+CO 0000DA 3C0800                          210              ANDW    A, #8
+CO 0000DD 1E                              211              SWAPW
+CO 0000DE 2D                              212              ORW     A
+CO 0000DF F109                            213              BNE     L_78
+                                          214              ._LINE  0, 37
+                                          215      ;;;;                            bcd-=0x00030000l
+                                                   ;
+CO 0000E1 7180                            216              MOVL    A, RL0
+CO 0000E3 1900000300                      217              SUBL    A, #196608
+CO 0000E8 71A0                            218              MOVL    RL0, A
+CO 0000EA                                 219      L_78:
+                                          220              ._LINE  0, 38
+                                          221      ;;;;                    if (!((bcd)& 0x00800000l
+                                                   ))
+CO 0000EA 7180                            222              MOVL    A, RL0
+CO 0000EC 3C0000                          223              ANDW    A, #0
+CO 0000EF 1E                              224              SWAPW
+CO 0000F0 3C8000                          225              ANDW    A, #128
+CO 0000F3 1E                              226              SWAPW
+CO 0000F4 2D                              227              ORW     A
+CO 0000F5 F109                            228              BNE     L_80
+                                          229              ._LINE  0, 39
+                                          230      ;;;;                            bcd-=0x00300000l
+                                                   ;
+CO 0000F7 7180                            231              MOVL    A, RL0
+CO 0000F9 1900003000                      232              SUBL    A, #3145728
+CO 0000FE 71A0                            233              MOVL    RL0, A
+CO 000100                                 234      L_80:
+                                          235              ._LINE  0, 40
+                                          236      ;;;;                    if (!((bcd)& 0x08000000l
+                                                   ))
+CO 000100 7180                            237              MOVL    A, RL0
+CO 000102 3C0000                          238              ANDW    A, #0
+CO 000105 1E                              239              SWAPW
+CO 000106 3C0008                          240              ANDW    A, #2048
+CO 000109 1E                              241              SWAPW
+CO 00010A 2D                              242              ORW     A
+CO 00010B F109                            243              BNE     L_82
+                                          244              ._LINE  0, 41
+_____________________________________________________________________________
+F2MC-16 Family SOFTUNE Assembler V30L14       2012-10-29 13:47:09   Page:   7
+- SOURCE LISTING - ( utils )
+
+SN LOC    OBJ                           LLINE      SOURCE
+
+                                          245      ;;;;                            bcd-=0x03000000l
+                                                   ;
+CO 00010D 7180                            246              MOVL    A, RL0
+CO 00010F 1900000003                      247              SUBL    A, #50331648
+CO 000114 71A0                            248              MOVL    RL0, A
+CO 000116                                 249      L_82:
+                                          250              ._LINE  0, 42
+                                          251      ;;;;                    if (!((bcd)& 0x80000000l
+                                                   ))
+CO 000116 7180                            252              MOVL    A, RL0
+CO 000118 3C0000                          253              ANDW    A, #0
+CO 00011B 1E                              254              SWAPW
+CO 00011C 3C0080                          255              ANDW    A, #32768
+CO 00011F 1E                              256              SWAPW
+CO 000120 2D                              257              ORW     A
+CO 000121 F109                            258              BNE     L_85
+                                          259              ._LINE  0, 43
+                                          260      ;;;;                            bcd-=0x30000000l
+                                                   ;
+CO 000123 7180                            261              MOVL    A, RL0
+CO 000125 1900000030                      262              SUBL    A, #805306368
+CO 00012A 71A0                            263              MOVL    RL0, A
+CO 00012C                                 264      L_85:
+                                          265              ._LINE  0, 45
+                                          266      ;;;;            }
+CO 00012C 8A                              267              MOVW    A, RW2
+CO 00012D 3001                            268              ADD     A, #1
+CO 00012F 9A                              269              MOVW    RW2, A
+CO 000130 7293FF                          270              MOV     A, @RW3+-1
+CO 000133 7662                            271              CMPW    A, RW2
+                                          272   x          BHI16   L_64
+CO 000135 FE03                                  O  "BLS"
+CO 000137 620000                    R           O  "JMP"
+                                          273              ._LINE  0, 45
+CO 00013A                                 274      L_88:
+                                          275              ._LINE  0, 24
+                                          276      ;;;;                    if (i==count2) break;
+                                          277              ._LINE  0, 46
+                                          278      ;;;;            return bcd;
+CO 00013A 7180                            279              MOVL    A, RL0
+CO 00013C                                 280      L_89:
+                                          281              ._LINE  0, 47
+                                          282      ;;;;     }
+                                          283              ._CONFIG        E
+                                          284              ._LINE  0, 47
+CO 00013C 5F07                            285              POPW    (RW0,RW1,RW2)
+CO 00013E 09                              286              UNLINK
+CO 00013F 66                              287              RETP
+                                          288              ._CONFIG        E
+          ==                              289              .END
+_____________________________________________________________________________
+F2MC-16 Family SOFTUNE Assembler V30L14       2012-10-29 13:47:09   Page:   8
+- SECTION LISTING - ( utils )
+
+   NO SECTION-NAME                       SIZE  ATTRIBUTES
+
+    0 CODE_utils . . . . . . . . . . .  000140 CODE    REL ALIGN=1

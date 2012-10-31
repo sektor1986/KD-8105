@@ -1,0 +1,46 @@
+-g
+-AL 2
+-ra _INRAM01=0x007200/0x007FFF
+-ro _INROM01=0xFF0000/0xFFFFFF
+-ro _INROM02=0xDF2000/0xDF9FFF
+-sc CONST/Const/BYTE=0xFF8000
+-check_rora
+-check_locate
+-rg 0
+-m "E:\sektor\Project\KD_8105\Source\LST\KD_8105.mp1"
+-pl 60
+-pw 132
+-alin "E:\sektor\Project\KD_8105\Source\LST"
+-alout "E:\sektor\Project\KD_8105\Source\LST"
+-Xals
+-Xalr
+-na
+-w 2
+-Xset_rora
+-cwno
+-a
+-cpu MB96F675RA
+-Xset_rora
+-o "E:\sektor\Project\KD_8105\Source\ABS\KD_8105.abs"
+
+"E:\sektor\Project\KD_8105\Source\OBJ\Start.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\Main.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\vectors.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\_ffmc16.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\utils.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\button.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\driver_update.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\lcd.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\smc.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\timer.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\icu.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\flash.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\adc.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\backlight.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\rtc.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\can.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\j1939.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\uart.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\mb96670_smc_zpd.obj"
+"E:\sektor\Project\KD_8105\Source\OBJ\74hc595.obj"
+

@@ -1,0 +1,160 @@
+[Information]
+DebChangeFlag=0
+MCUChangeFlag=0
+[Version]
+Version=1
+Level=1
+Revision=0
+[Debug Type]
+Type=1
+Virtual CPU File=wv907f3.dll
+Core ID=0
+Monitor Load=1
+Monitor Load Condition=Disable
+Monitor Combination Version=10100
+Mcu Name=MB96F685RA
+Monitor Select Count=0
+[Device]
+Communication=USB 
+ProductID=0
+Protocol=3
+[Target]
+AutoLoad=Enable
+Before Batch File=
+After Batch File=prc\romconst.prc
+Non AutoMap=Disable
+Load DebInfo Only=Disable
+Ondemand Load Condition=Disable
+Main Freq=1
+Main Freq Unit=F4240
+ClockUP Mode=Enable
+PowerSupply=Disable
+StartFlashSync=Enable
+Synchronize after load=Disable
+[Start]
+Batch File=
+[Window]
+Flag=Enable
+AssemblySize=0 0 0 0
+AssemblyState=0
+AssemblyFGColor=0 0 255
+RegisterSize=0 0 0 0
+RegisterState=0
+MemorySize=0 0 0 0
+MemoryState=0
+CommandSize=0 0 420 320
+CommandState=0
+Assembly Address=H'000000
+Memory Address=H'000000
+Memory Mode=H'FFFFFFFF
+Memory Ascii=H'00000001
+Memory SplitRow=0
+RMemory Address=H'000000
+RMemory Mode=H'FFFFFFFF
+RMemory Ascii=H'00000001
+RMemory SplitRow=0
+Trace ViewMode=FFFFFFFF
+Command Max History=H'00000032
+Source Display Mode=Enable
+Source Multi Mode=Enable
+Source Ask Mode=Enable
+Source Active Mode=Enable
+Source PC Color=255 255 0
+Source Scope Color=255 0 255
+Source Back Trace=255 0 255
+Register Change Color=255 0 0
+Perfomance Mode=H'00000001
+Perfomance Scale=1 0 0.000000 0.000000
+Coverage Address=H'000000
+Coverage Type=H'00000000
+Coverage SplitRow=0
+RMemory Change Color=255 0 0
+RMemory Invalid Color=128 128 128
+WatchSize=0 0 0 0
+WatchState=0
+Memory Line Byte=H'00000000
+Assembly Coverage Mode=Disable
+Source Coverage Mode=Disable
+Abs Coverage Mode=Disable
+Abs Sort Mode=H'00000001
+Memory Change Color=255 0 0
+Memory Mark Color0=192 192 192
+Memory Mark Color1=192 0 0
+Memory Mark Color2=255 255 0
+Memory Mark Color3=0 255 0
+Memory Mark Color4=0 255 255
+Memory Mark Color5=0 128 192
+Memory Mark Color6=255 128 64
+Source Executed Color=0 128 0
+Source UnExecuted Color=128 0 0
+[Path Environment]
+Flag=Enable
+Source=
+[Map]
+Flag=Enable
+Area0=00000000 000000EF 3 0 0
+Area2=00000100 0000017F 3 0 0
+Area3=00000180 0000037F 7 0 0
+Area4=00000380 00000BFF 3 0 0
+Area6=00002240 00002541 3 0 0
+Area7=00002542 0000423F 7 0 0
+Area8=00004240 00004541 3 0 0
+Area9=00004542 00007FFF 7 0 0
+Area10=00008000 0000FFFF 1 0 0
+Area12=000F0000 000F0FFF 3 0 0
+Area14=000FE000 000FFFFF 5 0 0
+Area16=00DE0000 00DE7FFF 5 0 0
+Area18=00DF0000 00DF7FFF 5 0 0
+Area20=00F80000 00FFFFFF 5 0 0
+Inrom Image=Off
+[Radix Environment]
+Flag=Enable
+Mode=10
+Source=1
+[Watch Environment]
+Flag=Enable
+Size=0
+Mode=0
+MBuf=0
+Check=1
+CSiz=100
+[Exec Environment]
+Flag=Enable
+GoIntMask=0
+StepUnit=3
+StepIntMask=0
+StepIntpCtrl=4
+GoTrcCtrl=2
+OnTheFlyBreakAdmit=0
+[Break Environment]
+Flag=Enable
+[Emulation Environment]
+Flag=Disable
+Cable Length=0
+[Monitor Environment]
+Flag=Enable
+MemoryWindow=0
+WatchWindow=0
+ObjectWindow=0
+ElapseTime=3E8
+Unit=1
+Mode=0
+RealtimeMemoryWindow=0
+[Error]
+Flag=Enable
+GuiErrorOutput=2
+CommandErrorOutput=1
+BatchErrorOutput=1
+ErrorOutputLevel=0
+[Color]
+Flag=Enable
+[Tab Environment]
+TabSize=8
+[Communication]
+Send=1000
+Receive=64
+[Trace Environment]
+Trace Break=0
+Trace Status=1
+[Coverage Environment]
+Coverage Status=0

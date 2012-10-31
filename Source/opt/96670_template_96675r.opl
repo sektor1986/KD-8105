@@ -1,0 +1,45 @@
+-g
+-AL 2
+-ra _INRAM01=0x007200/0x007FFF
+-ro _INROM01=0xFE0000/0xFFFFFF
+-ro _INROM02=0xDF2000/0xDF9FFF
+-sc CONST/Const/BYTE=0xFF8000
+-check_rora
+-check_locate
+-rg 0
+-m "E:\sektor\Project\Спидометр MB96670\PA8090_8141\LST\PA8090_8141.mp1"
+-pl 60
+-pw 132
+-alin "E:\sektor\Project\Спидометр MB96670\PA8090_8141\LST"
+-alout "E:\sektor\Project\Спидометр MB96670\PA8090_8141\LST"
+-Xals
+-Xalr
+-na
+-w 2
+-Xset_rora
+-cwno
+-a
+-cpu MB96F675RA
+-Xset_rora
+-o "E:\sektor\Project\Спидометр MB96670\PA8090_8141\ABS\PA8090_8141.abs"
+
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\Start.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\Main.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\vectors.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\_ffmc16.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\utils.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\button.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\driver_update.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\lcd.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\smc.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\timer.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\icu.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\flash.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\adc.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\backlight.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\rtc.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\4Imp.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\can.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\j1939.obj"
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\uart.obj"
+

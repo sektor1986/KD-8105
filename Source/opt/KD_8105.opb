@@ -1,0 +1,28 @@
+-dt s,d,r,a
+-pl 60
+-pw 132
+-g
+-cwno
+-cpu MB96F675RA
+"E:\sektor\Project\KD_8105\Source\ABS\KD_8105.abs"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\Start.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\Main.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\vectors.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\_ffmc16.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\utils.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\button.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\driver_update.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\lcd.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\smc.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\timer.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\icu.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\flash.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\adc.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\backlight.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\rtc.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\can.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\j1939.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\uart.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\mb96670_smc_zpd.obj"
+-a "E:\sektor\Project\KD_8105\Source\OBJ\74hc595.obj"
+

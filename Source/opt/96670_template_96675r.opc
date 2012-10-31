@@ -1,0 +1,14 @@
+-g
+-w 3
+-INF LIST
+-O 4
+-K SPEED
+-model MEDIUM
+-B
+-K EOPT
+-K LIB
+-K UNROLL
+-c
+-cwno
+-cpu MB96F675RA
+-INF srcin  

@@ -1,0 +1,297 @@
+[Version]
+DLLVer=02.3007.00.1
+PRJVer=1
+
+[PRJKIND]
+mode=1
+
+[CPUTYPE]
+CpuSerise=907
+
+[PrjInfo]
+Count=1
+PrjInfo-0=Debug
+Active=Debug
+
+[MEMBER]
+F0=45
+F1=0 f Source Files
+F2=0 c src\_ffmc16.c
+F3=0 c src\driver_update.c
+F4=0 c src\flash.c
+F5=0 c Src\Main.c
+F6=0 * readme.txt
+F7=0 a Src\Start.asm
+F8=0 c src\timer.c
+F9=0 c src\utils.c
+F10=0 c Src\vectors.c
+F11=0 f Source Files\driver
+F12=0 c src\74hc595.c
+F13=0 c src\adc.c
+F14=0 c src\backlight.c
+F15=0 c src\button.c
+F16=0 c src\can.c
+F17=0 c src\icu.c
+F18=0 c src\j1939.c
+F19=0 c src\lcd.c
+F20=0 c src\mb96670_smc_zpd\mb96670_smc_zpd.c
+F21=0 c src\rtc.c
+F22=0 c src\smc.c
+F23=0 c src\uart.c
+F24=0 f Include Files
+F25=0 h src\basics.h
+F26=0 h src\driver_update.h
+F27=0 h src\flash.h
+F28=0 h src\options.h
+F29=0 h src\timer.h
+F30=0 h src\utils.h
+F31=0 f Include Files\driver
+F32=0 h src\4Imp.h
+F33=0 h src\74hc595.h
+F34=0 h src\adc.h
+F35=0 h src\backlight.h
+F36=0 h src\button.h
+F37=0 h src\icu.h
+F38=0 h src\j1939.h
+F39=0 h src\lcd.h
+F40=0 h src\mb96670_smc_zpd\mb96670_smc_zpd.h
+F41=0 h src\rtc.h
+F42=0 h src\smc.h
+F43=0 h src\uart.h
+F44=0 h src\zpd.h
+F45=0 h src\mb96670_smc_zpd\zpd_settings.h
+
+[OPTIONFILE]
+FILE=options.dat
+
+[CPUTYPE-Debug]
+CsvFile=Lib\907\907.csv
+CpuName=MB96F675RA
+Count=0
+
+[DirInfo-Debug]
+CONFIG=.\
+OBJ=OBJ\
+LST=LST\
+OPT=OPT\
+
+[MEMBER-Debug]
+F0=21
+F1=0 m 1 ABS\KD_8105.abs
+F2=0 a 1 Src\Start.asm
+F3=22 c 1 Src\Main.c
+F3-1=- src\mcu.h
+F3-2=- src\_ffmc16.h
+F3-3=- src\base_types.h
+F3-4=- src\fstdint.h
+F3-5=- src\vectors.h
+F3-6=- src\mb96670.h
+F3-7=- src\driver_update.h
+F3-8=- src\timer.h
+F3-9=- src\button.h
+F3-10=- src\adc.h
+F3-11=- src\lcd.h
+F3-12=- src\smc.h
+F3-13=- src\backlight.h
+F3-14=- src\rtc.h
+F3-15=- src\can.h
+F3-16=- src\j1939.h
+F3-17=- src\basics.h
+F3-18=- src\uart.h
+F3-19=- src\mb96670_smc_zpd\mb96670_smc_zpd.h
+F3-20=- C:\Program Files\Softune16\LIB\907\INCLUDE\stddef.h
+F3-21=- src\options.h
+F3-22=- src\74hc595.h
+F4=11 c 1 Src\vectors.c
+F4-1=- src\vectors.h
+F4-2=- src\mcu.h
+F4-3=- src\_ffmc16.h
+F4-4=- src\base_types.h
+F4-5=- src\fstdint.h
+F4-6=- src\mb96670.h
+F4-7=- src\mb96670_smc_zpd\mb96670_smc_zpd.h
+F4-8=- src\basics.h
+F4-9=- C:\Program Files\Softune16\LIB\907\INCLUDE\stddef.h
+F4-10=- src\icu.h
+F4-11=- src\backlight.h
+F5=2 c 1 src\_ffmc16.c
+F5-1=- src\_ffmc16.h
+F5-2=- src\mb96670.h
+F6=1 c 1 src\utils.c
+F6-1=- src\utils.h
+F7=8 c 1 src\button.c
+F7-1=- src\button.h
+F7-2=- src\mcu.h
+F7-3=- src\_ffmc16.h
+F7-4=- src\mb96670.h
+F7-5=- src\timer.h
+F7-6=- src\base_types.h
+F7-7=- src\fstdint.h
+F7-8=- C:\Program Files\Softune16\LIB\907\INCLUDE\stddef.h
+F8=23 c 1 src\driver_update.c
+F8-1=- src\button.h
+F8-2=- src\mcu.h
+F8-3=- src\_ffmc16.h
+F8-4=- src\mb96670.h
+F8-5=- src\driver_update.h
+F8-6=- src\timer.h
+F8-7=- src\lcd.h
+F8-8=- src\smc.h
+F8-9=- src\utils.h
+F8-10=- src\base_types.h
+F8-11=- src\fstdint.h
+F8-12=- src\flash.h
+F8-13=- src\adc.h
+F8-14=- src\rtc.h
+F8-15=- src\icu.h
+F8-16=- src\j1939.h
+F8-17=- src\can.h
+F8-18=- src\basics.h
+F8-19=- src\backlight.h
+F8-20=- src\uart.h
+F8-21=- C:\Program Files\Softune16\LIB\907\INCLUDE\stddef.h
+F8-22=- src\74hc595.h
+F8-23=- src\options.h
+F9=5 c 1 src\lcd.c
+F9-1=- src\utils.h
+F9-2=- src\lcd.h
+F9-3=- src\mcu.h
+F9-4=- src\_ffmc16.h
+F9-5=- src\mb96670.h
+F10=6 c 1 src\smc.c
+F10-1=- src\smc.h
+F10-2=- src\mcu.h
+F10-3=- src\_ffmc16.h
+F10-4=- src\mb96670.h
+F10-5=- src\options.h
+F10-6=- src\fstdint.h
+F11=7 c 1 src\timer.c
+F11-1=- src\timer.h
+F11-2=- src\mcu.h
+F11-3=- src\_ffmc16.h
+F11-4=- src\mb96670.h
+F11-5=- src\base_types.h
+F11-6=- src\fstdint.h
+F11-7=- C:\Program Files\Softune16\LIB\907\INCLUDE\stddef.h
+F12=4 c 1 src\icu.c
+F12-1=- src\mb96670.h
+F12-2=- src\mcu.h
+F12-3=- src\_ffmc16.h
+F12-4=- src\icu.h
+F13=4 c 1 src\flash.c
+F13-1=- src\mcu.h
+F13-2=- src\_ffmc16.h
+F13-3=- src\mb96670.h
+F13-4=- src\flash.h
+F14=4 c 1 src\adc.c
+F14-1=- src\adc.h
+F14-2=- src\mcu.h
+F14-3=- src\_ffmc16.h
+F14-4=- src\mb96670.h
+F15=5 c 1 src\backlight.c
+F15-1=- src\backlight.h
+F15-2=- src\mcu.h
+F15-3=- src\_ffmc16.h
+F15-4=- src\mb96670.h
+F15-5=- src\adc.h
+F16=4 c 1 src\rtc.c
+F16-1=- src\mcu.h
+F16-2=- src\_ffmc16.h
+F16-3=- src\mb96670.h
+F16-4=- src\rtc.h
+F17=6 c 1 src\can.c
+F17-1=- src\mcu.h
+F17-2=- src\_ffmc16.h
+F17-3=- src\mb96670.h
+F17-4=- src\vectors.h
+F17-5=- src\can.h
+F17-6=- src\basics.h
+F18=11 c 1 src\j1939.c
+F18-1=- src\timer.h
+F18-2=- src\base_types.h
+F18-3=- src\fstdint.h
+F18-4=- src\mcu.h
+F18-5=- src\_ffmc16.h
+F18-6=- src\mb96670.h
+F18-7=- src\j1939.h
+F18-8=- src\can.h
+F18-9=- src\basics.h
+F18-10=- C:\Program Files\Softune16\LIB\907\INCLUDE\stddef.h
+F18-11=- src\icu.h
+F19=4 c 1 src\uart.c
+F19-1=- src\uart.h
+F19-2=- src\mcu.h
+F19-3=- src\_ffmc16.h
+F19-4=- src\mb96670.h
+F20=9 c 1 src\mb96670_smc_zpd\mb96670_smc_zpd.c
+F20-1=- src\mb96670_smc_zpd\mb96670_smc_zpd.h
+F20-2=- src\basics.h
+F20-3=- src\mcu.h
+F20-4=- src\_ffmc16.h
+F20-5=- src\mb96670.h
+F20-6=- src\mb96670_smc_zpd\zpd_settings.h
+F20-7=- src\smc.h
+F20-8=- src\adc.h
+F20-9=- src\lcd.h
+F21=4 c 1 src\74hc595.c
+F21-1=- src\mcu.h
+F21-2=- src\_ffmc16.h
+F21-3=- src\mb96670.h
+F21-4=- src\74hc595.h
+
+[BUILDMODE-Debug]
+kernel=0
+ABI=0
+
+[RUNSET-Debug]
+CONVERT=1
+CONVERTKIND=0
+
+[DebState-Debug]
+SupCount=1
+Supfile-0=Simulator.sup
+Current=Simulator.sup
+AliasFile="D:\WORK\Project\Спидометр ПА8090\PA8090_8141\lst\Main.lst"
+CPURunMode=16,16,16,16,0,1,0x0:0x0,,0,0xFF
+BROMCount=3
+BootROMPathList0=C:\Softune\Softune_300022\Lib\907\BootROM
+BootROMPathList1=C:\Program Files\Softune16\Lib\907\BootROM
+BootROMPathList2=C:\Softune\Lib\907\BootROM
+BootROMMode=1
+
+[AsmBefore]
+Count=0
+
+[AsmAfter]
+Count=0
+
+[CcBefore]
+Count=0
+
+[CcAfter]
+Count=0
+
+[LnkBefore]
+Count=0
+
+[LnkAfter]
+Count=0
+
+[LibBefore]
+Count=0
+
+[LibAfter]
+Count=0
+
+[CnvBefore]
+Count=0
+
+[CnvAfter]
+Count=0
+
+[ConfigBefore]
+Count=0
+
+[ConfigAfter]
+Count=0
+

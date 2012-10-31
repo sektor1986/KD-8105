@@ -1,0 +1,27 @@
+-dt s,d,r,a
+-pl 60
+-pw 132
+-g
+-cwno
+-cpu MB96F675RA
+"E:\sektor\Project\Спидометр MB96670\PA8090_8141\ABS\PA8090_8141.abs"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\Start.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\Main.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\vectors.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\_ffmc16.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\utils.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\button.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\driver_update.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\lcd.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\smc.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\timer.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\icu.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\flash.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\adc.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\backlight.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\rtc.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\4Imp.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\can.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\j1939.obj"
+-a "E:\sektor\Project\Спидометр MB96670\PA8090_8141\OBJ\uart.obj"
+
